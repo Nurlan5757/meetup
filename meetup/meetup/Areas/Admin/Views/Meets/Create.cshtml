@@ -1,0 +1,41 @@
+﻿
+
+@{
+    ViewData["Title"] = "Create";
+}
+@model CreateMeetVM
+
+<div class="card">
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label">Name</label>
+                <input asp-for="Name" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label asp-for="Image" class="form-label">Image</label>
+                <input asp-for="Image" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label asp-for="Subtitle" class="form-label">Subtitle</label>
+                <input asp-for="Subtitle" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label asp-for="logo1" class="form-label">logo1</label>
+                <input asp-for="logo1" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label asp-for="logo2" class="form-label">logo2</label>
+                <input asp-for="logo2" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label asp-for="logo3" class="form-label">logo3</label>
+                <input asp-for="logo3" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
